@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ООО СПМ Трейд — Поставщик электрооборудования</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+                <span>Электрум</span>
+            </a>
+
+            <!-- Основная навигация (десктоп) -->
+            <nav class="nav" id="menu">
+                  <ul class="nav-list"></ul>
+                <li><a href="#hero" class="nav-link active">Главная</a></li>
+                <li><a href="#about" class="nav-link">О компании</a></li>
+                <li><a href="#products" class="nav-link">Продукция</a></li>
+                <li><a href="#partners" class="nav-link">Партнёры</a></li>
+                <li><a href="#process" class="nav-link">Процесс</a></li>
+                <li><a href="#contacts" class="nav-link">Контакты</a></li>
+            </nav>
+            </nav>
+
+            <a href="#contacts" class="btn btn-outline">Связаться</a>
+
+            <!-- Бургер -->
+            <button class="burger" id="burger-btn" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Герой -->
+    <section id="hero" class="hero">
+        <div class="hero-pattern"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="badge animate-reveal">⚡ Надёжный поставщик с 2010 года</span>
+                <h1 class="animate-reveal delay-1">ООО СПМ Трейд — <span class="highlight">комплексный поставщик</span>
+                    электрооборудования</h1>
+                <p class="animate-reveal delay-2">Поставка систем заземления, кабельных решений, электрообогрева и
+                    светотехники — комплексно и надёжно.</p>
+                <div class="hero-actions animate-reveal delay-3">
+                    <a href="#products" class="btn btn-primary">Смотреть продукцию <i
+                            class="fas fa-arrow-right"></i></a>
+                    <a href="#contacts" class="btn btn-ghost">Получить консультацию</a>
+                </div>
+                <div class="hero-stats animate-reveal delay-4">
+                    <div class="stat">
+                        <span class="stat-number" data-count="15">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">лет на рынке</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="500">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">проектов в год</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="8">0</span>
+                        <span class="stat-label">направлений поставок</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card main-card float-slow">
+                    <i class="fas fa-shield-halved"></i>
+                    <h3>Заземление</h3>
+                    <p>Баттерманн и ZANDZ</p>
+                </div>
+                <div class="hero-card secondary-card float-fast">
+                    <i class="fas fa-cable-car"></i>
+                    <h3>Кабельные системы</h3>
+                    <p>АСД Электрик и ДКС</p>
+                </div>
+                <div class="hero-card accent-card float-medium">
+                    <i class="fas fa-temperature-high"></i>
+                    <h3>Электрообогрев</h3>
+                    <p>Защита от замерзания</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О компании -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header animate-reveal">
+                <span class="section-tag">О нас</span>
+                <h2>Опыт и направления деятельности</h2>
+                <p>Компания специализируется на комплексных поставках промышленного электрооборудования</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text animate-reveal">
+                    <p>ООО СПМ Трейд — надёжный комплексный поставщик электрооборудования. Мы сотрудничаем с ведущими
+                        производителями и предлагаем решения для широкого спектра отраслей.</p>
+                    <p>Наша миссия — обеспечить клиентов качественным оборудованием, технической поддержкой и сократить
+                        затраты при реализации проектов.</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card animate-reveal delay-1">
+                        <i class="fas fa-industry"></i>
+                        <h3>Промышленность</h3>
+                        <p>Заводы, производственные линии</p>
+                    </div>
+                    <div class="about-card animate-reveal delay-2">
+                        <i class="fas fa-building"></i>
+                        <h3>Строительство</h3>
+                        <p>Жилые и коммерческие объекты</p>
+                    </div>
+                    <div class="about-card animate-reveal delay-3">
+                        <i class="fas fa-oil-well"></i>
+                        <h3>Нефтегазовый сектор</h3>
+                        <p>Специальные решения для отрасли</p>
+                    </div>
+                    <div class="about-card animate-reveal delay-4">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Энергетика</h3>
+                        <p>Электростанции и подстанции</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Продукция -->
+    <section id="products" class="section products">
+        <div class="container">
+            <div class="section-header animate-reveal">
+                <span class="section-tag">Продукция</span>
+                <h2>Наши направления поставок</h2>
+                <p>Широкий ассортимент сертифицированного оборудования</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Заземление -->
+                <div class="product-card animate-reveal">
+                    <div class="product-card-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="product-card-body">
+                        <span class="product-card-number">01</span>
+                        <h3>Системы заземления</h3>
+                        <p>Сертифицированные системы <strong>Баттерманн</strong> и <strong>ZANDZ</strong>,
+                            соответствующие ГОСТ и международным стандартам.</p>
+                        <div class="product-card-tags">
+                            <span>ГОСТ</span>
+                            <span>ISO</span>
+                            <span>IEC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Кабельные системы -->
+                <div class="product-card animate-reveal delay-1">
+                    <div class="product-card-icon">
+                        <i class="fas fa-cable-car"></i>
+                    </div>
+                    <div class="product-card-body">
+                        <span class="product-card-number">02</span>
+                        <h3>Кабельно-несущие системы</h3>
+                        <p>Решения от <strong>АСД Электрик</strong> и <strong>ДКС</strong> с высокой механической
+                            прочностью.</p>
+                        <div class="product-card-tags">
+                            <span>АСД</span>
+                            <span>ДКС</span>
+                            <span>НПТ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Электрообогрев -->
+                <div class="product-card animate-reveal delay-2">
+                    <div class="product-card-icon">
+                        <i class="fas fa-temperature-high"></i>
+                    </div>
+                    <div class="product-card-body">
+                        <span class="product-card-number">03</span>
+                        <h3>Электрообогрев</h3>
+                        <p>Греющие кабели и системы автоматического управления для защиты от замерзания.</p>
+                        <div class="product-card-tags">
+                            <span>Кабели</span>
+                            <span>Терморегуляторы</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Светильники -->
+                <div class="product-card animate-reveal delay-3">
+                    <div class="product-card-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="product-card-body">
+                        <span class="product-card-number">04</span>
+                        <h3>Промышленные светильники</h3>
+                        <p>Энергоэффективные решения для промышленных помещений любой сложности.</p>
+                        <div class="product-card-tags">
+                            <span>LED</span>
+                            <span>Энерго</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Электрощиты -->
+                <div class="product-card animate-reveal delay-4">
+                    <div class="product-card-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="product-card-body">
+                        <span class="product-card-number">05</span>
+                        <h3>Электрощитовое оборудование</h3>
+                        <p>Сертифицированные щиты и комплектующие под задачи конкретного заказчика.</p>
+                        <div class="product-card-tags">
+                            <span>Щиты</span>
+                            <span>Комплектующие</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Дополнительная карточка (для симметрии) -->
+                <div class="product-card product-card-cta animate-reveal delay-5">
+                    <div class="product-card-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="product-card-body">
+                        <h3>Нужна консультация?</h3>
+                        <p>Поможем подобрать оптимальное решение под вашу задачу.</p>
+                        <a href="#contacts" class="btn btn-primary btn-small">Связаться с нами</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Партнёры -->
+    <section id="partners" class="partners">
+        <div class="container">
+            <div class="section-header animate-reveal">
+                <span class="section-tag">Партнёры</span>
+                <h2>Сравнительная таблица поставщиков</h2>
+                <p>Внутренние аналитические данные ООО СПМ Трейд</p>
+            </div>
+            <div class="table-wrapper animate-reveal">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Производитель</th>
+                            <th>Направление</th>
+                            <th>Преимущества</th>
+                            <th>Сертификация</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Баттерманн</strong></td>
+                            <td>Заземление</td>
+                            <td>Высокая коррозионная стойкость</td>
+                            <td>ГОСТ, IEC</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ZANDZ</strong></td>
+                            <td>Заземление</td>
+                            <td>Полный комплект решений</td>
+                            <td>ГОСТ, ISO</td>
+                        </tr>
+                        <tr>
+                            <td><strong>АСД Электрик</strong></td>
+                            <td>Кабельные системы</td>
+                            <td>Широкий ассортимент</td>
+                            <td>ГОСТ</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ДКС</strong></td>
+                            <td>Кабельные системы</td>
+                            <td>Высокая прочность</td>
+                            <td>ГОСТ, ISO</td>
+                        </tr>
+                        <tr>
+                            <td><strong>НПТ</strong></td>
+                            <td>Кабельные трассы</td>
+                            <td>Защита от коррозии</td>
+                            <td>ГОСТ</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ведущие бренды</strong></td>
+                            <td>Светильники</td>
+                            <td>Энергоэффективность</td>
+                            <td>ГОСТ, IEC</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="partners-slider">
+            <div class="partners-track">
+                <!-- Повтор 1 -->
+                <div class="partners-group">
+                    <div class="partner-logo"><img src="img/asd.png" alt="asd"></div>
+                    <div class="partner-logo"><img src="img/bettermann.webp" alt="BetterMann"></div>
+                    <div class="partner-logo"><img src="img/dkc.png" alt="dkc"></div>
+                    <div class="partner-logo"><img src="img/zandz.jpg" alt="ZANDZ"></div>
+                </div>
+                <!-- Повтор 2 -->
+                <div class="partners-group" aria-hidden="true">
+                    <div class="partner-logo"><img src="img/asd.png" alt="asd"></div>
+                    <div class="partner-logo"><img src="img/bettermann.webp" alt="BetterMann"></div>
+                    <div class="partner-logo"><img src="img/dkc.png" alt="dkc"></div>
+                    <div class="partner-logo"><img src="img/zandz.jpg" alt="ZANDZ"></div>
+                </div>
+                <!-- Повтор 3 -->
+                <div class="partners-group" aria-hidden="true">
+                    <div class="partner-logo"><img src="img/asd.png" alt="asd"></div>
+                    <div class="partner-logo"><img src="img/bettermann.webp" alt="BetterMann"></div>
+                    <div class="partner-logo"><img src="img/dkc.png" alt="dkc"></div>
+                    <div class="partner-logo"><img src="img/zandz.jpg" alt="ZANDZ"></div>
+                </div>
+                <!-- Повтор 4 -->
+                <div class="partners-group" aria-hidden="true">
+                    <div class="partner-logo"><img src="img/asd.png" alt="asd"></div>
+                    <div class="partner-logo"><img src="img/bettermann.webp" alt="BetterMann"></div>
+                    <div class="partner-logo"><img src="img/dkc.png" alt="dkc"></div>
+                    <div class="partner-logo"><img src="img/zandz.jpg" alt="ZANDZ"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Процесс -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-header animate-reveal">
+                <span class="section-tag">Процесс</span>
+                <h2>Этапы комплексной поставки</h2>
+                <p>От заявки до сдачи — гарантия качества и техподдержки</p>
+            </div>
+            <div class="process-steps">
+                <div class="step animate-reveal">
+                    <div class="step-number">1</div>
+                    <div class="step-icon"><i class="fas fa-file-signature"></i></div>
+                    <h3>Заявка</h3>
+                    <p>Вы оставляете заявку на сайте или по телефону</p>
+                </div>
+                <div class="step animate-reveal delay-1">
+                    <div class="step-number">2</div>
+                    <div class="step-icon"><i class="fas fa-calculator"></i></div>
+                    <h3>Расчёт</h3>
+                    <p>Готовим коммерческое предложение в течение 2 часов</p>
+                </div>
+                <div class="step animate-reveal delay-2">
+                    <div class="step-number">3</div>
+                    <div class="step-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Договор</h3>
+                    <p>Заключаем договор и согласовываем условия</p>
+                </div>
+                <div class="step animate-reveal delay-3">
+                    <div class="step-number">4</div>
+                    <div class="step-icon"><i class="fas fa-truck-fast"></i></div>
+                    <h3>Поставка</h3>
+                    <p>Организуем доставку до вашего объекта</p>
+                </div>
+                <div class="step animate-reveal delay-4">
+                    <div class="step-number">5</div>
+                    <div class="step-icon"><i class="fas fa-clipboard-check"></i></div>
+                    <h3>Сдача</h3>
+                    <p>Передаём документацию и поддерживаем после поставки</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="advantages">
+        <div class="container">
+            <div class="section-header animate-reveal">
+                <span class="section-tag">Преимущества</span>
+                <h2>Почему выбирают нас</h2>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-card animate-reveal">
+                    <div class="advantage-icon"><i class="fas fa-boxes-stacked"></i></div>
+                    <h3>Широкий ассортимент</h3>
+                    <p>Более 5000 позиций от ведущих производителей</p>
+                </div>
+                <div class="advantage-card animate-reveal delay-1">
+                    <div class="advantage-icon"><i class="fas fa-headset"></i></div>
+                    <h3>Техническая поддержка</h3>
+                    <p>Помогаем подобрать оптимальные решения</p>
+                </div>
+                <div class="advantage-card animate-reveal delay-2">
+                    <div class="advantage-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Надёжные партнёры</h3>
+                    <p>Работаем только с проверенными производителями</p>
+                </div>
+                <div class="advantage-card animate-reveal delay-3">
+                    <div class="advantage-icon"><i class="fas fa-clock"></i></div>
+                    <h3>Сокращение сроков</h3>
+                    <p>Оптимизируем процессы и снижаем затраты</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content animate-reveal">
+                <h2>Готовы начать сотрудничество?</h2>
+                <p>Оставьте заявку — менеджер свяжется с вами в течение 2 часов</p>
+                <a href="#contacts" class="btn btn-large btn-pulse">Оставить заявку <i
+                        class="fas fa-paper-plane"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <div class="section-header animate-reveal">
+                <span class="section-tag">Контакты</span>
+                <h2>Свяжитесь с нами</h2>
+                <p>Ответим на все вопросы и подготовим предложение</p>
+            </div>
+            <div class="contacts-grid">
+                <div class="contact-info animate-reveal">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Телефон</h4>
+                            <a href="tel:+78001234567">+7 (800) 123-45-67</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:info@spm-trade.ru">info@spm-trade.ru</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-location-dot"></i>
+                        <div>
+                            <h4>Адрес</h4>
+                            <p>Москва, ул. Электрозаводская, 21</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Режим работы</h4>
+                            <p>Пн–Пт: 9:00 – 18:00</p>
+                        </div>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form animate-reveal delay-1">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" placeholder="Иван Иванов" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" rows="4" placeholder="Опишите вашу задачу"></textarea>
+                    </div>
+                    <div class="form-group form-checkbox">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="privacy" required>
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">
+                                Я соглашаюсь с
+                                <a href="/privacy-policy" target="_blank">политикой конфиденциальности</a>
+                                и даю согласие на обработку персональных данных
+                            </span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+                    <span>Электрум</span>
+                </a>
+                <p>Надёжный комплексный поставщик электрооборудования</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <a href="#hero">Главная</a>
+                    <a href="#about">О компании</a>
+                    <a href="#products">Продукция</a>
+                    <a href="#partners">Партнёры</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Продукция</h4>
+                    <a href="#products">Заземление</a>
+                    <a href="#products">Кабельные системы</a>
+                    <a href="#products">Электрообогрев</a>
+                    <a href="#products">Светильники</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2024 ООО СПМ Трейд. Все права защищены. <a href="#">Политика конфиденциальности</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
