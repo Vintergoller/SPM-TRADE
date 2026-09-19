@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+  <defs>
+    <linearGradient id="kabeksGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5a623"/>
+      <stop offset="1" stop-color="#e07b00"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="12" width="36" height="36" rx="8" fill="url(#kabeksGrad)"/>
+  <path d="M14 22 h16 M14 30 h16 M14 38 h16" stroke="#04231a"
+        stroke-width="3" stroke-linecap="round"/>
+  <text x="52" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="800"
+        fill="#e6fff5" letter-spacing="1">КАБЕКС</text>
+  <text x="52" y="44" font-family="Arial, sans-serif" font-size="9"
+        fill="#8fb5a6" letter-spacing="1.5">КАБЕЛЬНЫЕ СИСТЕМЫ</text>
+</svg>

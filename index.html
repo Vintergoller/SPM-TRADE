@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPM-TRADE — Электросветильники и кабеленесущие системы</title>
+    <meta name="description"
+        content="Поставщик электросветильников и кабеленесущих систем. LED светильники, кабельные лотки, монтаж под ключ. Гарантия 5 лет.">
+    <link rel="icon" href="img/spm-trade.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Прогресс чтения -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Кастомный курсор -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Фоновые частицы -->
+    <div class="bg-particles" id="bgParticles"></div>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+    <header id="header">
+        <nav>
+            <a class="logo" href="#">
+                <img src="img/spm-trade.svg" alt="SPM-TRADE" class="logo-img">
+                SPM-TRADE
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#catalog">Каталог</a></li>
+                <li><a href="#calculator">Калькулятор</a></li>
+                <li><a href="#projects">Объекты</a></li>
+                <li><a href="#advantages">Почему мы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-sm">Заявка</a>
+            <button class="burger" id="burger" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div>
+                <div class="badge">Официальный поставщик · Склад в наличии</div>
+                <h1>Свет и <span class="accent">инфраструктура</span> для вашего объекта</h1>
+                <p>Электросветильники и кабеленесущие системы премиум-класса. Промышленные, уличные и офисные решения с
+                    гарантией до 5 лет и монтажом под ключ.</p>
+                <div class="hero-cta">
+                    <a href="#catalog" class="btn btn-primary">Смотреть каталог →</a>
+                    <a href="#contact" class="btn btn-ghost">Получить расчёт</a>
+                </div>
+                <div class="hero-stats">
+                    <div>
+                        <div class="stat-num" data-count="1200">0</div>
+                        <div class="stat-label">Объектов освещено</div>
+                    </div>
+                    <div>
+                        <div class="stat-num" data-count="15">0</div>
+                        <div class="stat-label">Лет на рынке</div>
+                    </div>
+                    <div>
+                        <div class="stat-num" data-count="98">0</div>
+                        <div class="stat-label">% довольных клиентов</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-glow"></div>
+
+                <div class="orbit o3"><span class="dot"></span></div>
+                <div class="orbit o2"><span class="dot"></span></div>
+                <div class="orbit o1"><span class="dot"></span></div>
+
+                <div class="lamp-wrap">
+                    <img src="img/lamp.svg" alt="Промышленный светильник" class="lamp-img">
+
+                    <!-- Вспышки -->
+                    <span class="flash flash-1"></span>
+                    <span class="flash flash-2"></span>
+                    <span class="flash flash-3"></span>
+
+                    <!-- Световой луч вниз -->
+                    <div class="light-beam"></div>
+
+                    <!-- Частицы пыли -->
+                    <div class="particles" id="particles"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATALOG -->
+    <section id="catalog">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">Каталог</span>
+                <h2>Продукция для любых задач</h2>
+                <p>От уличного освещения до промышленных лотков — всё для комплексной электрификации.</p>
+            </div>
+            <div class="products">
+                <div class="card reveal">
+                    <div class="card-image">
+                        <img src="img/industrial_ligthning.png" alt="LED светильники">
+                    </div>
+                    <div class="card-body">
+                        <h3>LED светильники</h3>
+                        <p>Промышленные, уличные и офисные модели мощностью от 20 до 500 Вт. IP65, гарантия 5 лет.</p>
+                        <a href="#contact" class="link">Заказать →</a>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-image">
+                        <img src="img/metall.webp" alt="Металлоконструкции">
+                    </div>
+                    <div class="card-body">
+                        <h3>Металлоконструкции</h3>
+                        <p>Опоры освещения, мачты, кабельные эстакады и несущие каркасы повышенной прочности с защитным
+                            покрытием методом горячего цинкования.</p>
+                        <a href="#contact" class="link">Заказать →</a>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-image">
+                        <img src="img/cabels.png" alt="LED светильники">
+                    </div>
+                    <div class="card-body">
+                        <h3>Кабельная продукция</h3>
+                        <p>Силовой кабель крупных сечений, контрольный, бронированный кабель и провода со специальным
+                            исполнением оболочки (нг-LS, нг-FRLS).</p>
+                        <a href="#contact" class="link">Заказать →</a>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-image">
+                        <img src="img/electric.jpg" alt="Электрощитовое оборудование">
+                    </div>
+                    <div class="card-body">
+                        <h3>Электрощитовое оборудование</h3>
+                        <p>Низковольтные комплектные устройства (НКУ), шкафы управления, ВРУ, ГРЩ и лоточные системы для
+                            безопасной прокладки сетей.</p>
+                        <a href="#contact" class="link">Заказать →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADVANTAGES -->
+    <section id="advantages">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">Почему мы</span>
+                <h2>Работаем на результат клиента</h2>
+                <p>Мы не просто продаём оборудование — мы решаем задачу освещения и электрификации объекта.</p>
+            </div>
+            <div class="adv-grid">
+                <div class="adv reveal">
+                    <div class="adv-num">01</div>
+                    <h4>Склад в наличии</h4>
+                    <p>Более 10 000 позиций на складе. Отгрузка в день заказа.</p>
+                </div>
+                <div class="adv reveal">
+                    <div class="adv-num">02</div>
+                    <h4>Проектный расчёт</h4>
+                    <p>Бесплатно рассчитаем освещённость и подберём оборудование.</p>
+                </div>
+                <div class="adv reveal">
+                    <div class="adv-num">03</div>
+                    <h4>Гарантия 5 лет</h4>
+                    <p>Официальная гарантия и постгарантийное обслуживание.</p>
+                </div>
+                <div class="adv reveal">
+                    <div class="adv-num">04</div>
+                    <h4>Доставка по РФ</h4>
+                    <p>Собственная логистика и партнёрские ТК. Доставка от 1 дня.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">Наши объекты</span>
+                <h2>Более 1200 реализованных проектов</h2>
+                <p>Промышленные цеха, торговые центры, логистические комплексы, улицы городов.</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project reveal">
+                    <div class="project-img" style="background:linear-gradient(135deg,#003d2e,#00c896)">
+                        <img src="img/ekb.webp" alt="">
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">Масштабная комплектация</span>
+                        <h4>Уральский приборостроительный завод</h4>
+                        <p>Самый объемный проект компании: многокомпонентные поставки силового кабеля, лотков ДКС,
+                            автоматики IEK, компонентов СКС, систем ELF, SPL и светодиодных светильников Ledel.</p>
+                    </div>
+                </div>
+
+                <div class="project reveal">
+                    <div class="project-img" style="background:linear-gradient(135deg,#004d38,#00ffb2)">
+                        <img src="img/kopeisk.jpg" alt="">
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">Модернизация</span>
+                        <h4>Копейский кирпичный завод</h4>
+                        <p>Бесперебойная и точная комплектация кабельно-проводниковой продукцией завода «Кабекс» в
+                            рамках глобальной модернизации технологических линий производства.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project reveal">
+                    <div class="project-img" style="background:linear-gradient(135deg,#005540,#00e0a0)">
+                        <img src="img/mechel.jfif" alt="">
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">Капитальное строительство</span>
+                        <h4>Челябинский металлургический комбинат (ЧМЗ)</h4>
+                        <p>Комплексная поставка кабельно-несущих систем из высокопрочного стеклопластика («Транснефть
+                            Пресс Композитор») и горячеоцинлованных несущих конструкций («ДКС»).</p>
+                    </div>
+                </div>
+
+                <div class="project reveal">
+                    <div class="project-img" style="background:linear-gradient(135deg,#003d2e,#00b085)">
+                        <img src="img/lightning.jpg" alt="">
+                    </div>
+                    <div class="project-body">
+                        <span class="project-tag">Инфраструктура</span>
+                        <h4>Комплексное освещение промышленных объектов²</h4>
+                        <p>Проектирование и снабжение систем освещения: внутренний энергоэффективный свет от «Вартон»,
+                            наружное освещение «Lightica», а также силовые опоры и мачты Ревдинского завода</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="projects-stats reveal">
+                <div><span class="projects-num" data-count="1200">0</span><span class="projects-label">объектов</span>
+                </div>
+                <div><span class="projects-num" data-count="15">0</span><span class="projects-label">лет опыта</span>
+                </div>
+                <div><span class="projects-num" data-count="48">0</span><span class="projects-label">регионов РФ</span>
+                </div>
+                <div><span class="projects-num" data-count="98">0</span><span class="projects-label">% повторных
+                        клиентов</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALCULATOR -->
+    <section id="calculator">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">Калькулятор</span>
+                <h2>Рассчитайте освещённость объекта</h2>
+                <p>Введите параметры помещения — подберём тип светильников и количество за 10 секунд.</p>
+            </div>
+
+            <div class="calc-wrap reveal">
+                <form class="calc-form" id="calcForm">
+                    <div class="calc-field">
+                        <label>Тип объекта</label>
+                        <select id="calcType">
+                            <option value="300">Офис / магазин (300 лк)</option>
+                            <option value="200">Склад / производство (200 лк)</option>
+                            <option value="500">Торговый зал / касса (500 лк)</option>
+                            <option value="150">Улица / парковка (150 лк)</option>
+                            <option value="400">Учебный класс (400 лк)</option>
+                        </select>
+                    </div>
+
+                    <div class="calc-field">
+                        <label>Площадь помещения, м²</label>
+                        <input type="number" id="calcArea" value="100" min="1" max="100000">
+                    </div>
+
+                    <div class="calc-field">
+                        <label>Высота потолка, м</label>
+                        <input type="number" id="calcHeight" value="3" min="2" max="30" step="0.1">
+                    </div>
+
+                    <div class="calc-field">
+                        <label>Мощность светильника, Вт</label>
+                        <select id="calcPower">
+                            <option value="30">30 Вт</option>
+                            <option value="50" selected>50 Вт</option>
+                            <option value="100">100 Вт</option>
+                            <option value="150">150 Вт</option>
+                            <option value="200">200 Вт</option>
+                        </select>
+                    </div>
+                </form>
+
+                <div class="calc-result">
+                    <div class="calc-result-item">
+                        <span class="calc-result-label">Нужно светильников</span>
+                        <span class="calc-result-value" id="calcLamps">—</span>
+                    </div>
+                    <div class="calc-result-item">
+                        <span class="calc-result-label">Суммарная мощность</span>
+                        <span class="calc-result-value" id="calcTotalPower">—</span>
+                    </div>
+                    <div class="calc-result-item">
+                        <span class="calc-result-label">Ориентировочная стоимость</span>
+                        <span class="calc-result-value accent" id="calcPrice">—</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary calc-btn">Получить точный расчёт →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FACTORIES -->
+    <section id="factories">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">Заводы-изготовители</span>
+                <h2>Работаем напрямую с производителями</h2>
+                <p>Официальные дистрибьюторские договоры с ведущими заводами России. Без посредников — цена от
+                    производителя.</p>
+            </div>
+
+            <div class="factories-grid">
+                <div class="factory reveal">
+                    <div class="factory-logo">
+                        <img src="img/factory-iek.svg" alt="IEK Group">
+                    </div>
+                    <div class="factory-body">
+                        <h4>IEK Group</h4>
+                        <p>Крупнейший российский производитель электротехники: светильники, кабеленесущие системы, щиты,
+                            аксессуары.</p>
+                        <span class="factory-tag">Электротехника · РФ</span>
+                    </div>
+                </div>
+
+                <div class="factory reveal">
+                    <div class="factory-logo">
+                        <img src="img/factory-varton.svg" alt="Varton">
+                    </div>
+                    <div class="factory-body">
+                        <h4>Varton</h4>
+                        <p>Российский производитель профессиональных LED-светильников для офисов, промышленности и улиц.
+                            Гарантия 5 лет.</p>
+                        <span class="factory-tag">Освещение · РФ</span>
+                    </div>
+                </div>
+
+                <div class="factory reveal">
+                    <div class="factory-logo">
+                        <img src="img/factory-kabeks.svg" alt="Кабекс">
+                    </div>
+                    <div class="factory-body">
+                        <h4>Кабекс</h4>
+                        <p>Производство кабеленесущих систем: металлические лотки, проволочные лотки, стойки, кронштейны
+                            и аксессуары.</p>
+                        <span class="factory-tag">Кабельные системы · РФ</span>
+                    </div>
+                </div>
+
+                <div class="factory reveal">
+                    <div class="factory-logo">
+                        <img src="img/factory-dkc.svg" alt="DKC">
+                    </div>
+                    <div class="factory-body">
+                        <h4>DKC</h4>
+                        <p>Один из лидеров рынка кабеленесущих систем в России: лотки, кабель-каналы, шкафы, аксессуары
+                            для монтажа.</p>
+                        <span class="factory-tag">Кабеленесущие системы · РФ</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="factories-note reveal">
+                <span class="factories-note-icon">✓</span>
+                <p>Все заводы имеют действующие сертификаты соответствия и разрешительную документацию. Предоставляем
+                    полный пакет документов для тендеров и госзакупок.</p>
+            </div>
+        </div>
+    </section>
+    <!-- CERTIFICATES -->
+    <section id="certs">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">Сертификаты</span>
+                <h2>Официальный партнёр брендов</h2>
+                <p>Подтверждённые сертификаты и удостоверения на право работы с ключевыми производителями.</p>
+            </div>
+
+            <div class="certs-grid">
+                <div class="cert reveal" data-cert="Сертификат официального дилера ARLIGHT">
+                    <div class="cert-preview">
+                        <svg viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg" class="cert-svg">
+                            <defs>
+                                <linearGradient id="certG1" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0" stop-color="#00c896" />
+                                    <stop offset="1" stop-color="#00ffb2" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="10" y="10" width="180" height="240" rx="8" fill="none" stroke="url(#certG1)"
+                                stroke-width="2" />
+                            <rect x="18" y="18" width="164" height="224" rx="6" fill="none" stroke="url(#certG1)"
+                                stroke-width="1" opacity=".5" />
+                            <circle cx="100" cy="70" r="28" fill="none" stroke="url(#certG1)" stroke-width="2" />
+                            <path d="M88 70l8 8 16-16" fill="none" stroke="url(#certG1)" stroke-width="3"
+                                stroke-linecap="round" />
+                            <text x="100" y="130" font-family="Arial" font-size="13" font-weight="700" fill="#00ffb2"
+                                text-anchor="middle">СЕРТИФИКАТ</text>
+                            <text x="100" y="152" font-family="Arial" font-size="10" fill="#8fb5a6"
+                                text-anchor="middle">официального дилера</text>
+                            <line x1="50" y1="170" x2="150" y2="170" stroke="#00ffb2" stroke-width="1" opacity=".4" />
+                            <text x="100" y="195" font-family="Arial" font-size="16" font-weight="800" fill="#e6fff5"
+                                text-anchor="middle">ARLIGHT</text>
+                            <text x="100" y="220" font-family="Arial" font-size="9" fill="#8fb5a6"
+                                text-anchor="middle">№ АР-2024-0187</text>
+                        </svg>
+                    </div>
+                    <div class="cert-body">
+                        <span class="cert-tag">Официальный дилер</span>
+                        <h4>ARLIGHT</h4>
+                        <p>Право на прямые поставки промышленных светильников ARLIGHT.</p>
+                    </div>
+                </div>
+
+                <div class="cert reveal" data-cert="Сертификат официального партнёра IEK">
+                    <div class="cert-preview">
+                        <svg viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg" class="cert-svg">
+                            <defs>
+                                <linearGradient id="certG2" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0" stop-color="#00c896" />
+                                    <stop offset="1" stop-color="#00ffb2" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="10" y="10" width="180" height="240" rx="8" fill="none" stroke="url(#certG2)"
+                                stroke-width="2" />
+                            <rect x="18" y="18" width="164" height="224" rx="6" fill="none" stroke="url(#certG2)"
+                                stroke-width="1" opacity=".5" />
+                            <circle cx="100" cy="70" r="28" fill="none" stroke="url(#certG2)" stroke-width="2" />
+                            <path d="M88 70l8 8 16-16" fill="none" stroke="url(#certG2)" stroke-width="3"
+                                stroke-linecap="round" />
+                            <text x="100" y="130" font-family="Arial" font-size="13" font-weight="700" fill="#00ffb2"
+                                text-anchor="middle">УДОСТОВЕРЕНИЕ</text>
+                            <text x="100" y="152" font-family="Arial" font-size="10" fill="#8fb5a6"
+                                text-anchor="middle">официального партнёра</text>
+                            <line x1="50" y1="170" x2="150" y2="170" stroke="#00ffb2" stroke-width="1" opacity=".4" />
+                            <text x="100" y="195" font-family="Arial" font-size="16" font-weight="800" fill="#e6fff5"
+                                text-anchor="middle">IEK</text>
+                            <text x="100" y="220" font-family="Arial" font-size="9" fill="#8fb5a6"
+                                text-anchor="middle">№ IEK-2024-0412</text>
+                        </svg>
+                    </div>
+                    <div class="cert-body">
+                        <span class="cert-tag">Официальный партнёр</span>
+                        <h4>IEK</h4>
+                        <p>Сертификат на право продажи кабеленесущих систем IEK.</p>
+                    </div>
+                </div>
+
+                <div class="cert reveal" data-cert="Сертификат дилера DKC">
+                    <div class="cert-preview">
+                        <svg viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg" class="cert-svg">
+                            <defs>
+                                <linearGradient id="certG3" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0" stop-color="#00c896" />
+                                    <stop offset="1" stop-color="#00ffb2" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="10" y="10" width="180" height="240" rx="8" fill="none" stroke="url(#certG3)"
+                                stroke-width="2" />
+                            <rect x="18" y="18" width="164" height="224" rx="6" fill="none" stroke="url(#certG3)"
+                                stroke-width="1" opacity=".5" />
+                            <circle cx="100" cy="70" r="28" fill="none" stroke="url(#certG3)" stroke-width="2" />
+                            <path d="M88 70l8 8 16-16" fill="none" stroke="url(#certG3)" stroke-width="3"
+                                stroke-linecap="round" />
+                            <text x="100" y="130" font-family="Arial" font-size="13" font-weight="700" fill="#00ffb2"
+                                text-anchor="middle">СЕРТИФИКАТ</text>
+                            <text x="100" y="152" font-family="Arial" font-size="10" fill="#8fb5a6"
+                                text-anchor="middle">авторизованного дилера</text>
+                            <line x1="50" y1="170" x2="150" y2="170" stroke="#00ffb2" stroke-width="1" opacity=".4" />
+                            <text x="100" y="195" font-family="Arial" font-size="16" font-weight="800" fill="#e6fff5"
+                                text-anchor="middle">DKC</text>
+                            <text x="100" y="220" font-family="Arial" font-size="9" fill="#8fb5a6"
+                                text-anchor="middle">№ DKC-2024-0093</text>
+                        </svg>
+                    </div>
+                    <div class="cert-body">
+                        <span class="cert-tag">Авторизованный дилер</span>
+                        <h4>DKC</h4>
+                        <p>Удостоверение авторизованного дилера кабеленесущих систем DKC.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно для просмотра сертификата -->
+    <div class="cert-modal" id="certModal">
+        <div class="cert-modal-backdrop" data-close></div>
+        <div class="cert-modal-content">
+            <button class="cert-modal-close" data-close aria-label="Закрыть">×</button>
+            <div class="cert-modal-preview" id="certModalPreview"></div>
+            <h3 id="certModalTitle"></h3>
+            <p class="cert-modal-hint">Полный пакет документов предоставляем по запросу</p>
+            <a href="#contact" class="btn btn-primary" data-close>Запросить документы →</a>
+        </div>
+    </div>
+
+    <!-- EV CHARGER -->
+    <section id="ev-charger">
+        <div class="container">
+            <div class="ev-hero reveal">
+                <div class="ev-badge">
+                    <span class="ev-badge-dot"></span>
+                    Новый проект · Электромобильность
+                </div>
+
+                <div class="ev-grid">
+                    <!-- Левая часть — контент -->
+                    <div class="ev-content">
+                        <h2 class="ev-title">
+                            Быстрая ЭЗС <span class="accent">150 кВт</span><br>
+                            «под ключ» от <span class="ev-brand">Электрум</span>
+                        </h2>
+
+                        <p class="ev-lead">
+                            Зарядная станция постоянного тока для электромобилей с установкой, подключением к сети и
+                            запуском за 30 дней. Работаем с АЗС, ТЦ, автопарками, ЖК и городскими проектами.
+                        </p>
+
+                        <ul class="ev-features">
+                            <li>
+                                <span class="ev-feature-icon">⚡</span>
+                                <div>
+                                    <strong>Мощность 150 кВт</strong>
+                                    <span>Пополнение заряда до 80% за 20–30 минут</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="ev-feature-icon">🔌</span>
+                                <div>
+                                    <strong>2 порта CCS2 + CHAdeMO</strong>
+                                    <span>Одновременная зарядка двух авто</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="ev-feature-icon">🛡️</span>
+                                <div>
+                                    <strong>IP54, −40…+50 °C</strong>
+                                    <span>Уличное исполнение, антивандальный корпус</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="ev-feature-icon">💳</span>
+                                <div>
+                                    <strong>Оплата и мониторинг</strong>
+                                    <span>QR, карты, приложение, интеграция с OCPP 2.0.1</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="ev-cta">
+                            <a href="#contact" class="btn btn-primary">Получить расчёт проекта →</a>
+                            <a href="#contact" class="btn btn-ghost">Скачать презентацию</a>
+                        </div>
+                    </div>
+
+                    <!-- Правая часть — визуал станции -->
+                    <div class="ev-visual">
+                        <div class="ev-pulse"></div>
+                        <div class="ev-station">
+                            <div class="ev-station-screen">
+                                <span class="ev-screen-num">150</span>
+                                <span class="ev-screen-unit">кВт</span>
+                            </div>
+                            <div class="ev-station-body">
+                                <div class="ev-station-line"></div>
+                                <div class="ev-station-line"></div>
+                                <div class="ev-station-line"></div>
+                            </div>
+                        </div>
+                        <div class="ev-ring ev-ring-1"></div>
+                        <div class="ev-ring ev-ring-2"></div>
+                        <div class="ev-ring ev-ring-3"></div>
+                    </div>
+                </div>
+
+                <!-- Характеристики в цифрах -->
+                <div class="ev-stats">
+
+                    <div class="ev-stat">
+                        <span class="ev-stat-num" data-count="30">0</span>
+                        <span class="ev-stat-label">дней до запуска</span>
+                    </div>
+                    <div class="ev-stat">
+                        <span class="ev-stat-num" data-count="150">0</span>
+                        <span class="ev-stat-label">кВт мощность</span>
+                    </div>
+                    <div class="ev-stat">
+                        <span class="ev-stat-num" data-count="2">0</span>
+                        <span class="ev-stat-label">порта зарядки</span>
+                    </div>
+                    <div class="ev-stat">
+                        <span class="ev-stat-num" data-count="5">0</span>
+                        <span class="ev-stat-label">лет гарантии</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Таймлайн «под ключ» -->
+        <div class="ev-process reveal">
+            <h3 class="ev-process-title">Как мы запускаем ЭЗС «под ключ»</h3>
+            <div class="ev-process-track">
+                <div class="ev-step">
+                    <div class="ev-step-num">01</div>
+                    <div class="ev-step-body">
+                        <h4>Заявка и аудит</h4>
+                        <p>Выезд инженера, оценка участка, проверка мощности сети</p>
+                        <span class="ev-step-time">1–3 дня</span>
+                    </div>
+                </div>
+                <div class="ev-step">
+                    <div class="ev-step-num">02</div>
+                    <div class="ev-step-body">
+                        <h4>Проект и согласование</h4>
+                        <p>Проектная документация, согласование с сетевой организацией</p>
+                        <span class="ev-step-time">5–10 дней</span>
+                    </div>
+                </div>
+                <div class="ev-step">
+                    <div class="ev-step-num">03</div>
+                    <div class="ev-step-body">
+                        <h4>Поставка оборудования</h4>
+                        <p>Станция «Электрум» 150 кВт, кабели, щиты, аксессуары</p>
+                        <span class="ev-step-time">3–7 дней</span>
+                    </div>
+                </div>
+                <div class="ev-step">
+                    <div class="ev-step-num">04</div>
+                    <div class="ev-step-body">
+                        <h4>Монтаж и подключение</h4>
+                        <p>Установка, прокладка кабеля, подключение к сети, заземление</p>
+                        <span class="ev-step-time">5–7 дней</span>
+                    </div>
+                </div>
+                <div class="ev-step">
+                    <div class="ev-step-num">05</div>
+                    <div class="ev-step-body">
+                        <h4>Запуск и обучение</h4>
+                        <p>Пусконаладка, настройка OCPP, обучение персонала, сдача</p>
+                        <span class="ev-step-time">1–2 дня</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Калькулятор окупаемости -->
+        <div class="ev-calc reveal">
+            <div class="ev-calc-head">
+                <span class="eyebrow">Калькулятор окупаемости</span>
+                <h3>Узнайте, за сколько окупится ЭЗС</h3>
+                <p>Введите параметры вашей локации — рассчитаем доход и срок окупаемости.</p>
+            </div>
+
+            <div class="ev-calc-grid">
+                <form class="ev-calc-form" id="evCalcForm">
+                    <div class="ev-calc-field">
+                        <label>Тип локации</label>
+                        <select id="evLocation">
+                            <option value="8">Трасса / АЗС (8 сессий/день)</option>
+                            <option value="5" selected>ТЦ / паркинг (5 сессий/день)</option>
+                            <option value="3">Бизнес-центр (3 сессии/день)</option>
+                            <option value="2">ЖК / спальный район (2 сессии/день)</option>
+                        </select>
+                    </div>
+
+                    <div class="ev-calc-field">
+                        <label>Средняя сессия, кВт·ч</label>
+                        <input type="number" id="evSession" value="40" min="5" max="150">
+                    </div>
+
+                    <div class="ev-calc-field">
+                        <label>Тариф для клиента, ₽/кВт·ч</label>
+                        <input type="number" id="evTariff" value="18" min="5" max="50">
+                    </div>
+
+                    <div class="ev-calc-field">
+                        <label>Загрузка в день, сессий</label>
+                        <input type="number" id="evLoad" value="5" min="1" max="30">
+                    </div>
+                </form>
+
+                <div class="ev-calc-result">
+                    <div class="ev-calc-result-item">
+                        <span class="ev-calc-result-label">Доход в месяц</span>
+                        <span class="ev-calc-result-value" id="evIncome">—</span>
+                    </div>
+                    <div class="ev-calc-result-item">
+                        <span class="ev-calc-result-label">Доход в год</span>
+                        <span class="ev-calc-result-value" id="evIncomeYear">—</span>
+                    </div>
+                    <div class="ev-calc-result-item highlight">
+                        <span class="ev-calc-result-label">Срок окупаемости</span>
+                        <span class="ev-calc-result-value accent" id="evPayback">—</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary ev-calc-btn">Получить детальный расчёт →</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- CTA -->
+    <section id="contact">
+        <div class="container">
+            <div class="cta reveal">
+                <h2>Получите расчёт за 15 минут</h2>
+                <p>Позвоните или напишите — инженер подберёт оборудование и рассчитает стоимость проекта.</p>
+                <div class="cta-contacts">
+                    <a href="tel:+70000000000" class="cta-contact">
+                        <span class="cta-contact-label">Телефон</span>
+                        <span class="cta-contact-value">+7 (000) 000-00-00</span>
+                    </a>
+                    <a href="mailto:info@example.ru" class="cta-contact">
+                        <span class="cta-contact-label">Email</span>
+                        <span class="cta-contact-value">info@example.ru</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo logo-footer">
+                        <img src="img/spm-trade.svg" alt="SPM-TRADE" class="logo-img">
+                        SPM-TRADE
+                    </div>
+                    <p class="footer-desc">Поставщик электросветильников и кабеленесущих систем для промышленных и
+                        гражданских объектов.</p>
+                </div>
+                <div>
+                    <h5>Каталог</h5>
+                    <a href="#catalog">Светильники</a>
+                    <a href="#catalog">Лотки</a>
+                    <a href="#catalog">Трассы</a>
+                </div>
+                <div>
+                    <h5>Компания</h5>
+                    <a href="#advantages">О нас</a>
+                    <a href="#contact">Контакты</a>
+                    <a href="#">Реквизиты</a>
+                </div>
+                <div>
+                    <h5>Контакты</h5>
+                    <a href="tel:+78000000000">+7 (800) 000-00-00</a>
+                    <a href="mailto:info@lumen.ru">info@spm-trade.ru</a>
+                    <a href="#">Челябинск</a>
+                </div>
+            </div>
+            <div class="footer-bottom">© 2025 SPM-TRADE. Все права защищены.</div>
+        </div>
+    </footer>
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
